@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)file:///C:/Users/USER/eclipse-workspace/SUBBIAH_FURNITURE/sakthi/css%20layout.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CSS Website Layout</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+.footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="./CSS Website Layout_files/logo.png" width="1000" height="100">
+</div>
+
+
+
+<div class="row">
+  <div class="column">
+    <h2>CSE</h2>
+    <p>Computer Science and Engineering: The core competencies of Computer Science and Engineering such as Operating Systems, Computer Networks, Analysis of Algorithms, Database Systems, are covered.</p>
+  </div>
+  
+  <div class="column">
+    <h2>CST</h2>
+    <p>Computer Science and Engineering: The core competencies of Computer Science and Engineering such as Operating Systems, Computer Networks, Analysis of Algorithms, Database Systems, are covered.</p>
+  </div>
+  
+  <div class="column">
+    <h2>CSD</h2>
+    <p>Computer Science and Design (CSD) aim to develop graduates that are not only well versed with computing approaches, tools, and technologies, but are also experienced with design approaches.</p>
+  </div>
+</div>
+<div class="footer">
+<p>Written by: Sakthi Nagaraj</p><p>
+</p></div>
+
+}
+
+</body></html>
